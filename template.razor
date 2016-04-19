@@ -1,0 +1,22 @@
+<h1>External test</h1>
+@{
+  var i=10;
+}
+@while ( i>0 )  {
+  @{
+    //code block
+    i--;
+  }
+  <div>now i = @i</div>
+}
+<ul>
+@each (car in locals.cars){
+  <li>
+    <h2>@car.name</h2>
+    <ul>
+        <li>Thumbnail: @car.images.thumbnail</li>
+        <li>Header image: @car.images.header</li>
+    </ul>
+  </li>
+}
+</ul>

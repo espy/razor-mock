@@ -1,0 +1,30 @@
+{
+  "cars": [
+    {
+      "name": "A-Class",
+      "images": {
+        "thumbnail": "someURL",
+        "header": "anotherURL"
+      }
+    },{
+      "name": "B-Class",
+      "images": {
+        "thumbnail": "someURL",
+        "header": "anotherURL"
+      }
+    },{
+      "name": "C-Class",
+      "images": {
+        "thumbnail": "someURL",
+        "header": "anotherURL"
+      }
+    },{
+      "name": "E-Class",
+      "images": {
+        "thumbnail": "someURL",
+        "header": "anotherURL"
+      }
+    }
+  ]
+}
+

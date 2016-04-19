@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Razor Loader</title>
+</head>
+<body>
+  <div id="container">
+
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="node_modules/razor-tmpl/browser/razor-tmpl.min.js"></script>
+  <script>
+    /*
+      Resources:
+        http://www.w3schools.com/aspnet/razor_cs_loops.asp
+        https://github.com/andyedinborough/RazorJS
+
+      Alternatives:
+        https://github.com/kirbysayshi/vash
+    */
+
+    var templateLoader = this
+
+    var loadModel = function(){
+      $.ajax({
+        url: "model.json",
+        success: function(model){
+          templateLoader.loadTemplate(model)
+        }
+      })
+    }
+
+    var loadTemplate = function(model){
+      $.ajax({
+        url: "template.razor",
+        success: function(template){
+          templateLoader.renderTemplate(template, model)
+        }
+      })
+    }
+
+    var renderTemplate = function(template, model){
+      var html = razor.render(template, model)
+      document.getElementById("container").innerHTML = html
+    }
+
+    $(document).ready(function(){
+      loadModel()
+    })
+
+  </script>
+</body>
+</html>
