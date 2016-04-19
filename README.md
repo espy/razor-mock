@@ -6,7 +6,7 @@ It pulls in `model.json` and `template.razor` (probably not the correct suffix) 
 
 ## Installation
 
-None, requires no additional packages.
+None, dependencies loaded via CDN, requires no additional package installation.
 
 ## Usage
 
