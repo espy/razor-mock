@@ -21,6 +21,7 @@
     */
 
     var templateLoader = this
+    var separator = '<!-- metadata end -->'
 
     var loadModel = function(){
       $.ajax({
@@ -41,6 +42,8 @@
     }
 
     var renderTemplate = function(template, model){
+      // remove metadata (master template info etc.) for frontend rendering
+      template = template.split(separator)[1]
       var html = razor.render(template, model)
       document.getElementById("container").innerHTML = html
     }
