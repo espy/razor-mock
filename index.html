@@ -44,6 +44,10 @@
     var renderTemplate = function(template, model){
       // remove metadata (master template info etc.) for frontend rendering
       template = template.split(separator)[1]
+      // add support for @foreach (razor-tpl uses @each)
+      template = template.replace('@foreach (var ', '@each (')
+      // add support for using `Model` as data root instead of `locals` or `@Model`
+      template = template.replace('Model', 'locals')
       var html = razor.render(template, model)
       document.getElementById("container").innerHTML = html
     }

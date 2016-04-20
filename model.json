@@ -1,29 +1,17 @@
 {
-  "cars": [
+  "CarList": [
     {
-      "name": "A-Class",
-      "images": {
-        "thumbnail": "someURL",
-        "header": "anotherURL"
-      }
+      "Name": "A-Class",
+      "Url": "someURL"
     },{
-      "name": "B-Class",
-      "images": {
-        "thumbnail": "someURL",
-        "header": "anotherURL"
-      }
+      "Name": "B-Class",
+      "Url": "someURL"
     },{
-      "name": "C-Class",
-      "images": {
-        "thumbnail": "someURL",
-        "header": "anotherURL"
-      }
+      "Name": "C-Class",
+      "Url": "someURL"
     },{
-      "name": "E-Class",
-      "images": {
-        "thumbnail": "someURL",
-        "header": "anotherURL"
-      }
+      "Name": "E-Class",
+      "Url": "someURL"
     }
   ]
 }
