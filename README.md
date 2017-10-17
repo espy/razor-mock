@@ -1,5 +1,7 @@
 # Razor-mock
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/espy/razor-mock.svg)](https://greenkeeper.io/)
+
 Simple proof-of-concept to see whether we can produce razor templates for Umbraco without actually running umbraco.
 
 It pulls in `model.json` and `template.razor` (probably not the correct suffix) and renders the resulting markup into `index.html`.
